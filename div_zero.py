@@ -30,3 +30,10 @@ class div_zero(orm.Model):
     _columns = {
         'div_zero': fields.char('Div Zero')
     }
+
+    def button_div_zero(self, cr, uid, ids, context=None):
+        if context is None:
+            context = {}
+        if ids is not list:
+            ids = [ids]
+        return {i: 1/0 for i in ids}

@@ -33,7 +33,7 @@ Returns the result of a division by zero.
 Installs a table without error.
 Creates objects without error.
 Installs a model with a view which has a button to generate a div zero
-exception, however the function does not exist yet.
+exception.
 
 Contributors
 ------------
@@ -46,7 +46,7 @@ Contributors
     # Categories can be used to filter modules in modules listing
     # Check <odoo>/addons/base/module/module_data.xml of the full list
     'category': 'Extra Tools',
-    'version': '3.0',
+    'version': '4.0',
 
     # any module necessary for this one to work correctly
     'depends': ['base', 'website'],
