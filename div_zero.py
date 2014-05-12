@@ -30,7 +30,3 @@ class div_zero(orm.Model):
     _columns = {
         'div_zero': fields.char('Div Zero')
     }
-
-    _defaults = {
-        'div_zero': lambda *x: str(1/0)
-    }

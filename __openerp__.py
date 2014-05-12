@@ -31,7 +31,9 @@ Div Zero
 
 Returns the result of a division by zero.
 Installs a table without error.
-Calculates 1/0 on object creation.
+Creates objects without error.
+Installs a model with a view which has a button to generate a div zero
+exception, however the function does not exist yet.
 
 Contributors
 ------------
@@ -44,7 +46,7 @@ Contributors
     # Categories can be used to filter modules in modules listing
     # Check <odoo>/addons/base/module/module_data.xml of the full list
     'category': 'Extra Tools',
-    'version': '2.0',
+    'version': '3.0',
 
     # any module necessary for this one to work correctly
     'depends': ['base', 'website'],

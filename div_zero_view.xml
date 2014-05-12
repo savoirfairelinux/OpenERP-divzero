@@ -3,8 +3,22 @@
 <openerp>
   <data>
 
+    <record id="div_zero_form_view" model="ir.ui.view">
+      <field name="name">Div Zero View</field>
+      <field name="model">div.zero</field>
+      <field name="arch" type="xml">
+        <form string="Div Zero Form" version="8.0">
+          <button name="button_div_zero"
+                  string="Divide by Zero"
+                  type="object"
+                  icon="gtk-execute"/>
+        </form>
+      </field>
+    </record>
+
     <record id="action_div_zero" model="ir.actions.act_window">
       <field name="name">Div Zero</field>
+      <field name="view_id" ref="div_zero_form_view"/>
       <field name="res_model">div.zero</field>
       <field name="view_mode">form</field>
     </record>
