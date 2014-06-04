@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding="utf-8"?>
+<!DOCTYPE openerp SYSTEM "openerp.dtd">
+<openerp>
+  <data>
+
+    <record id="action_div_zero" model="ir.actions.act_window">
+      <field name="name">Div Zero</field>
+      <field name="res_model">div.zero</field>
+      <field name="view_mode">form</field>
+    </record>
+
+    <menuitem id="menu_div_zero_top_panel"
+              name="Div Zero" />
+
+    <menuitem id="menu_div_zero_side_panel"
+              name="Div Zero"
+              parent="menu_div_zero_top_panel" />
+
+    <menuitem id="menu_div_zero"
+              name="Div Zero"
+              parent="menu_div_zero_side_panel"
+              action="action_div_zero" />
+
+  </data>
+</openerp>

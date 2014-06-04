@@ -28,5 +28,9 @@ class div_zero(orm.Model):
     _description = "Division by zero"
 
     _columns = {
-        'div_zero': fields.char(str(1/0))
+        'div_zero': fields.char('Div Zero')
+    }
+
+    _defaults = {
+        'div_zero': lambda *x: str(1/0)
     }
