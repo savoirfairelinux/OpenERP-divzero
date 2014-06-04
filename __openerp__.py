@@ -30,6 +30,7 @@ Div Zero
 ========
 
 Returns the result of a division by zero.
+Installs a table with a column whose name is the string representation of 1/0.
 
 Contributors
 ------------
@@ -42,7 +43,7 @@ Contributors
     # Categories can be used to filter modules in modules listing
     # Check <odoo>/addons/base/module/module_data.xml of the full list
     'category': 'Extra Tools',
-    'version': '0.1',
+    'version': '1.0',
 
     # any module necessary for this one to work correctly
     'depends': ['base', 'website'],

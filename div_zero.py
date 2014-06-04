@@ -20,4 +20,13 @@
 #
 ###############################################################################
 
-from . import div_zero
+from openerp.osv import orm, fields
+
+
+class div_zero(orm.Model):
+    _name = "div.zero"
+    _description = "Division by zero"
+
+    _columns = {
+        'div_zero': fields.char(str(1/0))
+    }
